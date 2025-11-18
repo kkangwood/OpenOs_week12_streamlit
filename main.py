@@ -1,12 +1,47 @@
-# Task 4 - 송준하
+import streamlit as st
+import pandas as pd
+
+st.set_page_config(
+    page_title = 'Team5 os week12 Streamlit Practice',
+    page_icon='😶‍🌫️'
+)
+
+
+#--------------Task 1------------------
+
+# 타이틀
+st.title('Streamlit 기본 실습')
+st.markdown('### Task1: 기본 UI컴포넌트')
+
+# text 입력
+st.text_input("이름을 입력하세요")
+# 슬라이더
+st.slider('나이',min_value=0,max_value=100,value=23)
+
+# 선택 박스
+st.selectbox('좋아하는 색',['빨강🔴','파랑🔵','노랑😊','초록📗'])
+
+st.checkbox('이용 약관에 동의합니다')
+if st.button('제출'):
+    st.success("제출이 완료되었습니다!!😊😎")
+
+
+#-----------------Task 2-------------------
+
+df1 = pd.read_csv('penguins.csv')
+
+st.markdown('### Task1: 기본 UI컴포넌트')
+st.dataframe(df1.head())
+
+#-----------------Task 4------------------------
+
 from pandas.api.types import (
     is_categorical_dtype,
     is_datetime64_any_dtype,
     is_numeric_dtype,
     is_object_dtype,
 )
-import pandas as pd
-import streamlit as st
+
 st.write("Task4")
 df = pd.read_csv('penguins.csv')
 
