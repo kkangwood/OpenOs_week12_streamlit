@@ -4,6 +4,21 @@ Streamlit을 활용해 기본 UI 컴포넌트, 데이터 표시, 차트 시각�
 
 ---
 
+## 📁 Project Asignment
+| 멤버 | 업무 | 
+|---|---|
+|HwaYoum|task 1,2|
+|junha-research|task 4|
+|kkangwood|task 3|
+|waitinghm|task 5|
+
+---
+
+## 📗 How to do
+1. git clone ~~
+2. pip install -r requirement.txt
+3. streamlit run ./main.py
+
 ## 📌 Features
 
 ### 🧩 Task 1 — 기본 UI 컴포넌트
@@ -48,11 +63,3 @@ Streamlit을 활용해 기본 UI 컴포넌트, 데이터 표시, 차트 시각�
 을 확인할 수 있습니다.
 
 ---
-
-## 📁 Project Asignment
-|사람|업무| 
-|---|---|
-|준화|task 1,2|
-|준하|task 4|
-|강우|task 3|
-|원영|task 5|
