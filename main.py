@@ -25,7 +25,7 @@ if st.button('제출'):
 
 df1 = pd.read_csv('penguins.csv')
 
-st.markdown('### Task1: 기본 UI컴포넌트')
+st.markdown('### Task2: 데이터 표시하기')
 st.dataframe(df1.head())
 
 #-----------------Task 4------------------------
@@ -37,7 +37,7 @@ from pandas.api.types import (
     is_object_dtype,
 )
 
-st.write("Task4")
+st.markdown('### Task4: 인터렉티브 필터')
 df = pd.read_csv('penguins.csv')
 
 def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
@@ -107,7 +107,7 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 st.dataframe(filter_dataframe(df))
 
 #--------------------Task 5------------------------------
-st.title('Task 5: 파일 업로드')
+st.markdown('### Task5: 파일 업로드')
 
 uploaded_file = st.file_uploader('Choose a file')
 if uploaded_file is not None:
@@ -134,7 +134,7 @@ if uploaded_file is not None:
 
 
 
-st.title('Task 6: 레이아웃 구성')
+st.markdown('### Task6: 레이아웃 구성')
 
 col1, col2 = st.columns(2)
 col1.write("컬럼 1")
